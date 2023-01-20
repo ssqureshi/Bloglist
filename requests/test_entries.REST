@@ -1,9 +1,9 @@
 POST http://localhost:3003/api/blogs
 Content-Type: application/json
-Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNhYWQiLCJpZCI6IjYzYTI3MGNjM2ZhZWU3MjY0NGUyYjdjZCIsImlhdCI6MTY3MTU5MDA5NH0.NHgZE9NloS4hBp7qHrspMApSkJf6UQKstyKSsksaY2I
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNhYWQiLCJpZCI6IjYzYmFkNTBlNDQxYmZiN2IxZTNhYjI5YSIsImlhdCI6MTY3MzE4OTk2Mn0.HhCto2r94Q1-xy7J17lJ4SY6S1OhV6NZs3hnHeWlacA
 
 {
-    "title": "qwerty",
+    "title": "1234",
     "author": "w",
     "url": "e",
     "likes": 15
@@ -13,21 +13,17 @@ Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNhY
 DELETE http://localhost:3003/api/blogs/63a1d3d345867388d0f799c6
 Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNhYWQiLCJpZCI6IjYzYTFkM2I2NDU4NjczODhkMGY3OTljMiIsImlhdCI6MTY3MTU0OTg3OX0.zU89V_YFinfzOWAyLTiukD5ZW18b-Cn3Guz845ZvYQg
 ###
-PUT http://localhost:3003/api/blogs/63a270f43faee72644e2b7d1
+PUT http://localhost:3003/api/blogs/5a422a851b54a676234d17f7
 Content-Type: application/json      
-Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNhYWQiLCJpZCI6IjYzYTI3MGNjM2ZhZWU3MjY0NGUyYjdjZCIsImlhdCI6MTY3MTU5MDA5NH0.NHgZE9NloS4hBp7qHrspMApSkJf6UQKstyKSsksaY2I
 
 
-{
-    "likes": 20
-}
 
 ###
 POST http://localhost:3003/api/users
 Content-Type: application/json
 
 {
-    "username": "Saad", 
+    "username": "qwerty", 
       "name": "Saad",
       "password": "1234"
 }

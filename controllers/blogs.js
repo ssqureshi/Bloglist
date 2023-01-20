@@ -49,19 +49,16 @@ blogsRouter.get('/', async (request, response) => {
 
   blogsRouter.put('/:id', async (request, response) => {
     const body = request.body
-    const user = request.user
-    const blogToBeUpdated = await Blog.findById(request.params.id)
-    if (blogToBeUpdated.user.toString() === user.id) {
 
     const blog = {
-      likes: body.likes
+      "title": body.title,
+      "author": body.author,
+      "url": body.url,
+      "likes": body.likes + 1
     }
 
     const updatedBlog = await Blog.findByIdAndUpdate(request.params.id, blog, {new:true})
     response.json(updatedBlog)
   }
-  else {
-    return response.status(401).json({ error: 'You do not have authorization to update this blog' })
-  }
-  })
+)
   module.exports = blogsRouter
